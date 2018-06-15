@@ -1,5 +1,5 @@
 package com.jonzhou.architecture;
 
-public interface IBaseView<T> {
-    void setPresenter(T presenter);
+public interface IBaseView<P> {
+//    void setPresenter(P p);
 }

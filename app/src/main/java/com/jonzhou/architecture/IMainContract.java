@@ -8,7 +8,7 @@ public interface IMainContract {
     }
 
 
-   interface  Presenter {
+    interface Presenter {
 
       void goSwim();
    }

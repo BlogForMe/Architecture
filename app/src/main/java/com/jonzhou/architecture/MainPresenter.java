@@ -7,7 +7,7 @@ public class MainPresenter implements IMainContract.Presenter {
     private  IMainContract.View mView;
     public MainPresenter(IMainContract.View view) {
         this.mView = view;
-        mView.setPresenter(this);
+//        mView.setPresenter(this);
     }
 
     @Override
@@ -15,4 +15,5 @@ public class MainPresenter implements IMainContract.Presenter {
         Log.i("MainPresenter","去游泳吗   ");
         mView.backSwimVie();
     }
+
 }
