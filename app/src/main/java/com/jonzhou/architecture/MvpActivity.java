@@ -13,4 +13,8 @@ public abstract class MvpActivity extends AppCompatActivity  implements IMainCon
         new MainPresenter(this);
     }
 
+    @Override
+    public void setPresenter(IMainContract.Presenter presenter) {
+        this.mPresenter = presenter;
+    }
 }

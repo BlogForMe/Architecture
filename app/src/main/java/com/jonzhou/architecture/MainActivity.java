@@ -16,10 +16,6 @@ public class MainActivity extends MvpActivity implements  IMainContract.View{
         mPresenter.goSwim();
     }
 
-    @Override
-    public void setPresenter(IMainContract.Presenter presenter) {
-        this.mPresenter = presenter;
-    }
 
     @Override
     public void backSwimVie() {
