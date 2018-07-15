@@ -1,24 +1,24 @@
-package com.jonzhou.architecture;
+package com.jonzhou.architecture.mi;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends MvpActivity<MainPresenter> implements IMainContract.View{
+import com.jonzhou.architecture.R;
+
+public class MainActivity extends MvpActivity implements IMainContract.View{
+
+    private MainPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    protected MainPresenter initPresenter() {
-        return  new MainPresenter(this);
+         presenter = new MainPresenter(this);
     }
 
     public  void  btClick(View view){
-        mPresenter.goSwim();
+        presenter.goSwim();
     }
 
 

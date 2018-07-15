@@ -1,8 +1,8 @@
-package com.jonzhou.architecture;
+package com.jonzhou.architecture.mi;
 
 public interface IMainContract {
 
-    interface  View extends  IBaseView<Presenter>{
+    interface  View  /* extends  IBaseView<Presenter>*/{
 
         void backSwimVie();
     }

@@ -1,4 +1,4 @@
-package com.jonzhou.architecture;
+package com.jonzhou.architecture.mi;
 
 import android.util.Log;
 
@@ -7,7 +7,6 @@ public class MainPresenter implements IMainContract.Presenter {
     private  IMainContract.View mView;
     public MainPresenter(IMainContract.View view) {
         this.mView = view;
-//        mView.setPresenter(this);
     }
 
     @Override
