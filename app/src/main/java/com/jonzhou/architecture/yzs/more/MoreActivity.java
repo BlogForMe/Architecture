@@ -10,6 +10,7 @@ import com.jonzhou.architecture.R;
 /**
  * @author : John
  * @date : 2018/7/15
+ * @link https://juejin.im/entry/5955e7166fb9a06bc23a8598
  */
 public class MoreActivity extends AppCompatActivity implements MorePresenterContract.View {
     private MorePresenterOne morePresenterOne;
